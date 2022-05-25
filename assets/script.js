@@ -1,4 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var elems = document.querySelectorAll(".sidenav");
-  var instances = M.Sidenav.init(elems);
+  M.Sidenav.init(document.querySelectorAll(".sidenav"));
+  M.FloatingActionButton.init(document.querySelectorAll(".fixed-action-btn"));
 });
