@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="assets/style.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
@@ -28,8 +32,8 @@
         </div>
         <div class="nav-content">
           <ul class="tabs tabs-transparent">
-            <li class="tab"><a class="active" href="#test1">Exemplo 1</a></li>
-            <li class="tab"><a href="#test2">Exemplo 2</a></li>
+            <li class="tab"><a class="active" href="#test1">Layout</a></li>
+            <li class="tab"><a href="#test2">Botões</a></li>
             <li class="tab"><a href="#test3">Exemplo 3</a></li>
             <li class="tab disabled">
               <a href="#test4">Exemplo Desativado</a>
@@ -59,17 +63,44 @@
           </div>
         </div>
         <div id="test2" class="card">
-          <h1>Exemplo 2</h1>
-          <a class="waves-effect waves-light btn">button</a>
+          <h1>Botões</h1>
+
+          <h4>Raised Button</h4>
+          <a class="waves-effect btn">Default</a>
+          <a class="waves-effect waves-light btn">Waves Light</a>
+          <a class="waves-effect waves-yellow btn">Waves Yellow</a>
+          <a class="waves-effect btn disabled">Waves Disabled</a>
+          <br>
+
+          <h4>Icon Button</h4>
           <a class="waves-effect waves-light btn"
-            ><i class="material-icons left">cloud</i>button</a
+            ><i class="material-icons left">cloud</i>Cloud Left</a
           >
           <a class="waves-effect waves-light btn"
-            ><i class="material-icons right">cloud</i>button</a
+            ><i class="material-icons right">cloud</i>Cloud Right</a
           >
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+          <br>
+
+          <h4>Flat Button</h4>
+          <a class="waves-effect waves-teal btn-flat">Flat Button</a>
+          <a class="waves-effect waves-teal btn-flat disabled">Flat Button Disabled</a>
+          <br>
+
+          <h4>Floating Button</h4>
           <a class="btn-floating btn-large waves-effect waves-light red"
             ><i class="material-icons">add</i></a
           >
+          <a class="btn-floating btn-large waves-effect waves-light red disabled"
+            ><i class="material-icons">add</i></a
+          >
+          <br>
+
+          <h4>Sizes</h4>
+          <a class="waves-effect waves-light btn-small">Small</a>
+          <a class="waves-effect waves-light btn-large">Large</a>
         </div>
         <div id="test3" class="card">
           <h1>Exemplo 3</h1>
