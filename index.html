@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="assets/style.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
@@ -17,38 +21,39 @@
       <nav class="nav-extended">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">Logo</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-            ><i class="material-icons">menu</i></a
-          >
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Sobre</a></li>
           </ul>
         </div>
+
         <div class="nav-content">
           <ul class="tabs tabs-transparent">
-            <li class="tab"><a class="active" href="#test1">Exemplo 1</a></li>
-            <li class="tab"><a href="#test2">Exemplo 2</a></li>
-            <li class="tab"><a href="#test3">Exemplo 3</a></li>
+            <li class="tab"><a class="active" href="#test1">Layout</a></li>
+            <li class="tab"><a href="#test2">Botões</a></li>
+            <li class="tab"><a href="#test3">Cards</a></li>
+            <li class="tab"><a href="#test4">Outros</a></li>
             <li class="tab disabled">
-              <a href="#test4">Exemplo Desativado</a>
+              <a href="#test5">Exemplo Desativado</a>
             </li>
           </ul>
         </div>
       </nav>
 
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Ajuda</a></li>
+        <li><a href="#">Sobre</a></li>
       </ul>
     </header>
 
     <main>
       <div class="container">
-        <div id="test1" class="card">
-          <h1>Exemplo 1</h1>
+        <div id="test1">
+          <h1>Layout</h1>
 
           <div class="row">
             <div class="col s12 card red">
@@ -58,24 +63,175 @@
             <div class="col s6 card red">6-columns (one-half)</div>
           </div>
         </div>
-        <div id="test2" class="card">
-          <h1>Exemplo 2</h1>
-          <a class="waves-effect waves-light btn">button</a>
+
+        <div id="test2">
+          <h1>Botões</h1>
+
+          <h4>Raised Button</h4>
+          <a class="waves-effect btn">Default</a>
+          <a class="waves-effect waves-light btn">Waves Light</a>
+          <a class="waves-effect waves-yellow btn">Waves Yellow</a>
+          <a class="waves-effect btn disabled">Waves Disabled</a>
+          <br>
+
+          <h4>Icon Button</h4>
           <a class="waves-effect waves-light btn"
-            ><i class="material-icons left">cloud</i>button</a
+            ><i class="material-icons left">cloud</i>Cloud Left</a
           >
           <a class="waves-effect waves-light btn"
-            ><i class="material-icons right">cloud</i>button</a
+            ><i class="material-icons right">cloud</i>Cloud Right</a
           >
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+          <br>
+
+          <h4>Flat Button</h4>
+          <a class="waves-effect waves-teal btn-flat">Flat Button</a>
+          <a class="waves-effect waves-teal btn-flat disabled">Flat Button Disabled</a>
+          <br>
+
+          <h4>Floating Button</h4>
           <a class="btn-floating btn-large waves-effect waves-light red"
             ><i class="material-icons">add</i></a
           >
+          <a class="btn-floating btn-large waves-effect waves-light red disabled"
+            ><i class="material-icons">add</i></a
+          >
+          <br>
+
+          <h4>Sizes</h4>
+          <a class="waves-effect waves-light btn-small">Small</a>
+          <a class="waves-effect waves-light btn-large">Large</a>
         </div>
-        <div id="test3" class="card">
-          <h1>Exemplo 3</h1>
+
+        <div id="test3">
+          <h1>Cards</h1>
+
+          <h4>Simple Card</h4>
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <h4>Card with FAB</h4>
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img class="activator" src="assets/images/lighthouse.jpg">
+                  <span class="card-title activator">Card Title</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                     labore et dolore magna aliqua.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4>Complex Card</h4>
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="assets/images/lighthouse.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator">Card Title</span>
+                  <p>Click the image to see more.</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="test4">
+          <h1>Outros</h1>
+
+          <h4>Toast</h4>
           <a onclick="M.toast({html: 'I am a toast'})" class="btn">Toast!</a>
+          <br>
+
+          <h4>Input Fields</h4>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="Placeholder" id="input_type_one" type="text" class="validate">
+                  <label for="first_name">Tipo 1</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="input_type_two" type="text" class="validate">
+                  <label for="last_name">Tipo 2</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                  <span class="helper-text" data-error="E-mail Inválido"></span>
+                </div>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">phone</i>
+                <input id="icon_telephone" type="tel" class="validate">
+                <label for="icon_telephone">Telefone</label>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Texto Expandível</label>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <h4>Chips</h4>
+          <div class="chip">
+            <img src="assets/images/lighthouse.jpg" alt="Contact Person">
+            Lighthouse
+          </div>
+          <div class="chip">
+            Closeable Chip
+            <i class="close material-icons">close</i>
+          </div>
+          <br>
+
+          <h4>Switch</h4>
+          <div class="switch">
+            <label>
+              Off
+              <input type="checkbox">
+              <span class="lever"></span>
+              On
+            </label>
+          </div>
+          <br>
         </div>
-        <div id="test4" class="col s12">
+
+        <div id="test5" class="col s12">
           <div class="card">Exemplo Desativado</div>
         </div>
       </div>
